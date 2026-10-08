@@ -1,0 +1,35 @@
+{
+  "snapshot_date": "2026-10-08",
+  "snapshot_time": "10:08",
+  "source_id": "user_screenshot_2026-10-08_1008",
+  "snapshot_type": "intraday",
+  "currency": "VND",
+  "price_unit": "kVND_per_share",
+  "account_identifier_stored": false,
+  "summary": {
+    "day_pnl_vnd": 211700,
+    "day_pnl_pct": 0.74,
+    "portfolio_pnl_vnd": -15073552,
+    "portfolio_pnl_pct": -34.29,
+    "estimated_positions_market_value_vnd": 28883600
+  },
+  "holdings": [
+    {"ticker":"FPT","quantity":152,"tradable_quantity":152,"market_price_kvnd":60.80,"cost_basis_kvnd":98.27,"weight_pct":32.01,"day_change_pct":1.84,"total_pnl_pct":-38.13,"total_pnl_vnd":-5700000},
+    {"ticker":"FPT_WFT","quantity":25,"tradable_quantity":0,"market_price_kvnd":60.80,"cost_basis_kvnd":0.00,"weight_pct":5.26,"day_change_pct":1.84,"total_pnl_pct":null,"total_pnl_vnd":1520000},
+    {"ticker":"HPG","quantity":130,"tradable_quantity":130,"market_price_kvnd":20.30,"cost_basis_kvnd":23.70,"weight_pct":9.14,"day_change_pct":-0.25,"total_pnl_pct":-14.36,"total_pnl_vnd":-440000},
+    {"ticker":"MBB","quantity":230,"tradable_quantity":230,"market_price_kvnd":18.95,"cost_basis_kvnd":22.33,"weight_pct":15.09,"day_change_pct":-0.79,"total_pnl_pct":-15.14,"total_pnl_vnd":-780000},
+    {"ticker":"PLX","quantity":100,"tradable_quantity":100,"market_price_kvnd":37.05,"cost_basis_kvnd":38.76,"weight_pct":12.83,"day_change_pct":2.35,"total_pnl_pct":-4.41,"total_pnl_vnd":-170000},
+    {"ticker":"PNJ","quantity":285,"tradable_quantity":285,"market_price_kvnd":18.70,"cost_basis_kvnd":49.45,"weight_pct":18.46,"day_change_pct":-1.06,"total_pnl_pct":-62.18,"total_pnl_vnd":-8760000},
+    {"ticker":"PVB","quantity":100,"tradable_quantity":100,"market_price_kvnd":20.90,"cost_basis_kvnd":28.34,"weight_pct":7.24,"day_change_pct":1.46,"total_pnl_pct":-26.26,"total_pnl_vnd":-740000}
+  ],
+  "observed_changes_vs_previous_snapshot": [
+    {"ticker":"FPT","quantity_before":252,"quantity_after":152,"inferred_action":"SELL","inferred_quantity":100,"execution_price_kvnd":null},
+    {"ticker":"PVB","quantity_before":200,"quantity_after":100,"inferred_action":"SELL","inferred_quantity":100,"execution_price_kvnd":null}
+  ],
+  "notes": [
+    "Snapshot is intraday, not end-of-day.",
+    "PNJ and PLX quantities are unchanged versus 2026-10-07 11:12.",
+    "FPT_WFT has tradable_quantity=0 in the screenshot.",
+    "Estimated positions market value is derived from visible quantity x market price and excludes cash not shown."
+  ]
+}

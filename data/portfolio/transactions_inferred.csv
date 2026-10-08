@@ -1,0 +1,3 @@
+from_date,from_time,to_date,to_time,ticker,quantity_change,inferred_action,execution_price_kvnd,confidence,evidence_note
+2026-10-07,11:12,2026-10-08,10:08,FPT,-100,SELL,,high,"Observed quantity changed 252 -> 152; exact execution price not shown"
+2026-10-07,11:12,2026-10-08,10:08,PVB,-100,SELL,,high,"Observed quantity changed 200 -> 100; exact execution price not shown"
