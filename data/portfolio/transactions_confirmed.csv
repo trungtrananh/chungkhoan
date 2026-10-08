@@ -1,0 +1,2 @@
+trade_date,reported_time,source_id,ticker,action,quantity,execution_price_kvnd,gross_value_vnd,status,evidence_note
+2026-10-08,14:06,user_message_2026-10-08_1406,PVB,SELL,100,21.10,2110000,FILLED,"User explicitly confirmed the sale filled at 21.1; fees/tax not included in gross value"
