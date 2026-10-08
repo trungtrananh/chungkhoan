@@ -1,0 +1,45 @@
+{
+  "as_of_date": "2026-10-08",
+  "as_of_time": "14:06",
+  "state_type": "derived_from_latest_snapshot_plus_confirmed_events",
+  "base_snapshot": {
+    "date": "2026-10-08",
+    "time": "10:08",
+    "source_id": "user_screenshot_2026-10-08_1008"
+  },
+  "confirmed_events_after_snapshot": [
+    {
+      "source_id": "user_message_2026-10-08_1406",
+      "ticker": "PVB",
+      "action": "SELL",
+      "quantity": 100,
+      "execution_price_kvnd": 21.10,
+      "gross_value_vnd": 2110000,
+      "status": "FILLED"
+    }
+  ],
+  "current_known_holdings": [
+    {"ticker":"FPT","quantity":152},
+    {"ticker":"FPT_WFT","quantity":25,"tradable_quantity_from_base_snapshot":0},
+    {"ticker":"HPG","quantity":130},
+    {"ticker":"MBB","quantity":230},
+    {"ticker":"PLX","quantity":100},
+    {"ticker":"PNJ","quantity":285},
+    {"ticker":"PVB","quantity":0}
+  ],
+  "pending_orders": [
+    {
+      "source_id": "user_message_2026-10-08_1406",
+      "ticker": "GVR",
+      "action": "BUY",
+      "quantity": 100,
+      "limit_price_kvnd": 33.80,
+      "status": "PENDING"
+    }
+  ],
+  "notes": [
+    "GVR is not a holding unless the user confirms the order filled.",
+    "Weights and portfolio P/L from the 10:08 screenshot are stale after the PVB sale and are not recalculated without a new full portfolio snapshot.",
+    "PVB sale gross value excludes fees and transaction tax."
+  ]
+}
