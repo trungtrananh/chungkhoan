@@ -22,13 +22,16 @@ Repo này là **source of truth dài hạn** cho:
 ## Source of truth
 
 Đọc theo thứ tự:
-1. `data/portfolio/latest.json` — snapshot mới nhất, truy vấn nhanh.
-2. `data/portfolio/holdings_history.csv` — lịch sử từng mã theo từng snapshot.
-3. `data/portfolio/snapshot_summary.csv` — P/L tổng danh mục theo thời điểm.
-4. `data/portfolio/transactions_inferred.csv` — giao dịch **suy ra** từ thay đổi số lượng.
-5. `docs/PORTFOLIO_CURRENT.md` — bản tóm tắt cho người/Agent.
-6. `docs/HIGH_CONVICTION_FRAMEWORK.md` — logic scanner.
-7. `docs/HARNESS.md` — kiến trúc và cách cập nhật.
+1. `data/portfolio/current_state.json` — trạng thái hiện biết mới nhất = snapshot gần nhất + giao dịch đã xác nhận sau snapshot.
+2. `data/portfolio/latest.json` — snapshot ảnh mới nhất, không tự thay đổi bởi giao dịch xác nhận sau ảnh.
+3. `data/portfolio/holdings_history.csv` — lịch sử từng mã theo từng snapshot.
+4. `data/portfolio/snapshot_summary.csv` — P/L tổng danh mục theo thời điểm.
+5. `data/portfolio/transactions_confirmed.csv` — giao dịch người dùng xác nhận đã khớp.
+6. `data/portfolio/transactions_inferred.csv` — giao dịch **suy ra** từ thay đổi số lượng.
+7. `data/portfolio/pending_orders.csv` — lệnh đang chờ, không được tính là holding.
+8. `docs/PORTFOLIO_CURRENT.md` — bản tóm tắt cho người/Agent.
+9. `docs/HIGH_CONVICTION_FRAMEWORK.md` — logic scanner.
+10. `docs/HARNESS.md` — kiến trúc và cách cập nhật.
 
 ## Quy trình cập nhật snapshot mới
 
@@ -73,7 +76,8 @@ Nếu không có mã đạt chuẩn, output hợp lệ là **0 mã**.
 
 ## Truy vấn nhanh
 
-- “Danh mục mới nhất?” → đọc `data/portfolio/latest.json`.
+- “Danh mục mới nhất?” → đọc `data/portfolio/current_state.json`; dùng `latest.json` để xem snapshot ảnh gốc gần nhất.
 - “Hôm qua so với hôm nay thay đổi gì?” → đọc 2 ngày gần nhất trong `holdings_history.csv` + `transactions_inferred.csv`.
 - “Tỷ trọng mã nào lớn nhất?” → dùng `weight_pct` snapshot mới nhất.
-- “Đã bán bao nhiêu FPT/PVB?” → dùng `transactions_inferred.csv`, không tự bịa giá bán.
+- “Đã bán bao nhiêu FPT/PVB?” → ưu tiên `transactions_confirmed.csv`; chỉ dùng `transactions_inferred.csv` khi chưa có xác nhận trực tiếp.
+- “Có lệnh nào đang chờ?” → đọc `pending_orders.csv`; **không** biến lệnh PENDING thành holding.
