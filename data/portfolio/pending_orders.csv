@@ -1,0 +1,2 @@
+order_date,reported_time,source_id,ticker,action,quantity,limit_price_kvnd,status,evidence_note
+2026-10-08,14:06,user_message_2026-10-08_1406,GVR,BUY,100,33.80,PENDING,"User explicitly reported an active LO buy order; not treated as a holding until fill is confirmed"
