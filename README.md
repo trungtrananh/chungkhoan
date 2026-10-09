@@ -15,7 +15,8 @@ Kho dữ liệu và harness phục vụ phân tích danh mục chứng khoán Vi
 ## Snapshot hiện có
 
 - 2026-10-07 11:12 — intraday.
-- 2026-10-08 10:08 — intraday, snapshot ảnh mới nhất.
-- 2026-10-08 14:06 — PVB bán 100 @21.10 đã khớp; GVR mua LO 100 @33.80 đang chờ.
+- 2026-10-08 10:08 — intraday.
+- 2026-10-09 09:16 — intraday, snapshot ảnh mới nhất.
+- 2026-10-08 14:06 — PVB bán 100 @21.10 đã khớp; GVR mua LO 100 @33.80 đã được đặt nhưng không xuất hiện ở snapshot sáng 09/10.
 
 Dữ liệu tài khoản nhạy cảm không được lưu vào repo.
