@@ -1,3 +1,4 @@
-snapshot_date,snapshot_time,source_id,day_pnl_vnd,day_pnl_pct,portfolio_pnl_vnd,portfolio_pnl_pct,estimated_positions_market_value_vnd,notes
-2026-10-07,11:12,user_screenshot_2026-10-07_1112,-345950,-0.93,-19689611,-34.78,36928600,"Intraday snapshot before observed quantity reductions"
-2026-10-08,10:08,user_screenshot_2026-10-08_1008,211700,0.74,-15073552,-34.29,28883600,"Intraday snapshot after FPT and PVB quantity reductions; excludes cash not shown in portfolio weights"
+snapshot_date,snapshot_time,source_id,total_cost_value_vnd,day_pnl_vnd,day_pnl_pct,portfolio_pnl_vnd,portfolio_pnl_pct,estimated_positions_market_value_vnd,notes
+2026-10-07,11:12,user_screenshot_2026-10-07_1112,,-345950,-0.93,-19689611,-34.78,36928600,"Intraday snapshot before observed quantity reductions"
+2026-10-08,10:08,user_screenshot_2026-10-08_1008,,211700,0.74,-15073552,-34.29,28883600,"Intraday snapshot after FPT and PVB quantity reductions; excludes cash not shown in portfolio weights"
+2026-10-09,09:16,user_screenshot_2026-10-09_0916,41122907,245800,0.93,-14382457,-34.97,26740450,"Intraday snapshot; PVB absent after confirmed sale; no GVR holding visible"

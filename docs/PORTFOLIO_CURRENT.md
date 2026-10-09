@@ -1,47 +1,41 @@
-# Danh mục hiện biết — 2026-10-08 14:06
+# Danh mục hiện tại — snapshot 2026-10-09 09:16
 
-> Trạng thái này được dựng từ **snapshot ảnh 10:08** cộng các giao dịch/lệnh người dùng xác nhận sau snapshot. Snapshot gốc vẫn được giữ nguyên trong `latest.json`.
+> Nguồn: ảnh danh mục do người dùng cung cấp. Đây là **snapshot intraday**, không phải EOD.
 
-## Holdings hiện biết
+## Tổng quan
 
-| Mã | KL hiện biết | Ghi chú |
-|---|---:|---|
-| FPT | 152 | Không có giao dịch mới sau snapshot |
-| FPT_WFT | 25 | Snapshot 10:08 cho thấy KL giao dịch = 0 |
-| HPG | 130 | Không đổi |
-| MBB | 230 | Không đổi |
-| PLX | 100 | Không đổi |
-| PNJ | 285 | Không đổi |
-| PVB | **0** | Đã bán nốt 100 cp |
+- Tổng giá trị vốn: **41.122.907 VND**
+- Tổng giá trị thị trường: **26.740.450 VND**
+- Lãi/lỗ trong ngày: **+245.800 VND (+0,93%)**
+- Lãi/lỗ danh mục: **-14.382.457 VND (-34,97%)**
 
-## Giao dịch xác nhận sau snapshot
+## Holdings
 
-- **PVB: SELL 100 cp @ 21.10 kVND/cp — FILLED**
-- Giá trị khớp gộp: **2.110.000 VND**, chưa trừ phí/thuế.
-- Đây là xác nhận trực tiếp của người dùng, không phải suy luận từ ảnh.
+| Mã | KL | KL giao dịch | Giá TT (kVND) | Giá vốn (kVND) | Tỷ trọng | Ngày | Tổng P/L |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| FPT | 152 | 152 | 59.60 | 98.27 | 33.90% | -0.17% | -39.35% |
+| FPT_WFT | 25 | 0 | 59.60 | 0.00 | 5.58% | -0.17% | +1,49 triệu VND |
+| HPG | 130 | 130 | 20.20 | 23.70 | 9.82% | +0.25% | -14.78% |
+| MBB | 230 | 230 | 18.75 | 22.33 | 16.13% | -0.79% | -16.04% |
+| PLX | 100 | 100 | 37.95 | 38.76 | 14.20% | +0.93% | -2.09% |
+| PNJ | 285 | 285 | 19.15 | 49.45 | 20.36% | +4.93% | -61.37% |
 
-## Lệnh đang chờ
+## Thay đổi so với 08/10 10:08
 
-- **GVR: BUY LO 100 cp @ 33.80 kVND/cp — PENDING**
-- **Chưa tính GVR vào danh mục** cho tới khi người dùng xác nhận lệnh đã khớp.
+- **PVB: 100 → 0**; giao dịch bán 100 cp @21.10 đã được người dùng xác nhận ngày 08/10.
+- FPT, FPT_WFT, HPG, MBB, PLX, PNJ: quantity không đổi.
+- **GVR không xuất hiện trong danh mục**. Lệnh LO 100 cp @33.80 ngày 08/10 vì vậy không được coi là đã khớp.
+- Tỷ trọng hiện tại lớn nhất: **FPT + FPT_WFT ~39,48%**, sau đó **PNJ 20,36%**, **MBB 16,13%**.
 
-## Snapshot ảnh gần nhất — 2026-10-08 10:08
+## Trạng thái giao dịch
 
-- Lãi/lỗ trong ngày: **+211.700 VND (+0,74%)**
-- Lãi/lỗ danh mục: **-15.073.552 VND (-34,29%)**
-- Estimated market value các vị thế hiển thị lúc 10:08: **~28,884 triệu VND**
-- Các tỷ trọng/P&L này **đã stale sau giao dịch PVB lúc 14:06**; không tự tính lại nếu chưa có snapshot đầy đủ mới.
-
-## Thay đổi đã biết từ 07/10 đến hiện tại
-
-- FPT: **252 → 152** ⇒ giảm 100 cp (giá khớp chưa được xác nhận trong dữ liệu repo).
-- PVB: **200 → 100** qua snapshot 08/10 10:08; sau đó **100 → 0**, bán xác nhận @21.10.
-- HPG, MBB, PLX, PNJ, FPT_WFT: quantity chưa có bằng chứng thay đổi.
-- GVR hiện chỉ là **lệnh mua đang chờ**, chưa phải holding.
+- PVB: **đã đóng vị thế**.
+- GVR: **không có vị thế được quan sát trong snapshot**.
+- Không có pending order nào được coi là active dựa trên bằng chứng hiện tại.
 
 ## Quy tắc cho Agent tiếp theo
 
-1. Đọc `data/portfolio/current_state.json` trước.
-2. Không dùng tỷ trọng từ snapshot 10:08 như tỷ trọng hiện tại sau khi PVB đã bán.
-3. Không tính GVR vào holdings nếu chưa có xác nhận FILLED.
-4. Khi có ảnh danh mục mới, snapshot ảnh mới sẽ supersede trạng thái suy diễn hiện tại và cần reconcile với các transaction đã xác nhận.
+1. Dùng `data/portfolio/current_state.json` cho trạng thái hiện biết.
+2. Dùng `latest.json` để lấy đầy đủ giá/tỷ trọng/P&L snapshot 09/10 09:16.
+3. Không suy diễn GVR đã khớp nếu chưa có xác nhận hoặc snapshot có vị thế.
+4. Không lưu số tài khoản chứng khoán hiển thị trong ảnh.
