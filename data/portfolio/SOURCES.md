@@ -29,3 +29,17 @@ Các con số trong CSV/JSON phải trace được về một source_id ở file
   - **PVB SELL 100 cp @ 21.10 kVND/cp — FILLED**.
   - **GVR BUY LO 100 cp @ 33.80 kVND/cp — PENDING**.
 - Chỉ PVB được coi là giao dịch đã thực hiện. GVR chưa được tính vào holdings cho tới khi có xác nhận khớp.
+
+## user_screenshot_2026-10-09_0916
+
+- Ngày theo ngữ cảnh: **2026-10-09**
+- Giờ hiển thị trên ảnh: **09:16**
+- Loại: ảnh chụp màn hình danh mục do người dùng cung cấp.
+- Snapshot intraday.
+- Tổng giá trị vốn: **41.122.907 VND**.
+- Tổng giá trị thị trường: **26.740.450 VND**.
+- P/L ngày: **+245.800 VND (+0,93%)**.
+- P/L danh mục: **-14.382.457 VND (-34,97%)**.
+- PVB không còn xuất hiện; phù hợp với giao dịch bán đã được xác nhận ngày 08/10.
+- GVR không xuất hiện; prior LO 100 @33.80 không được coi là đã khớp.
+- Account identifier xuất hiện trên ảnh nhưng **không được lưu** vào dữ liệu repo.
