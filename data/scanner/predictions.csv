@@ -1,0 +1,2 @@
+prediction_id,issue_date,ticker,exchange,criteria_version,reference_price,target_price,win_threshold_pct,horizon_sessions,deadline_session,hc_score,estimated_confidence_pct,rr,market_regime,status,mfe_pct,mae_pct,outcome,lesson
+VPB-001,2026-08-27,VPB,HOSE,legacy-conversation-record,27.40,28.77,5.00,7,2026-09-10,80,81,2.0,Risk-On,COMPLETED,,,LOSS,"Direction/catalyst thesis did not deliver >=5% within the fixed 7-session horizon; follow-through and timing confidence were too high. Do not rewrite target or deadline."
