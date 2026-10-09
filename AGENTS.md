@@ -31,7 +31,9 @@ Repo này là **source of truth dài hạn** cho:
 7. `data/portfolio/pending_orders.csv` — lệnh đang chờ, không được tính là holding.
 8. `docs/PORTFOLIO_CURRENT.md` — bản tóm tắt cho người/Agent.
 9. `docs/HIGH_CONVICTION_FRAMEWORK.md` — logic scanner.
-10. `docs/HARNESS.md` — kiến trúc và cách cập nhật.
+10. `skills/chungkhoan/SKILL.md` — runbook đầy đủ để scan/trade hàng ngày.
+11. `data/scanner/predictions.csv` — prediction ledger và calibration.
+12. `docs/HARNESS.md` — kiến trúc và cách cập nhật.
 
 ## Quy trình cập nhật snapshot mới
 
@@ -46,6 +48,12 @@ Khi người dùng gửi ảnh danh mục mới:
 5. Thay thế `latest.json` bằng snapshot mới nhất.
 6. Cập nhật `docs/PORTFOLIO_CURRENT.md`.
 7. Không xóa snapshot lịch sử.
+
+## Skill chungkhoan
+
+Khi người dùng yêu cầu quét cổ phiếu, trade plan, phân tích 7 phiên hoặc cập nhật track record, **đọc và tuân thủ `skills/chungkhoan/SKILL.md` trước**.
+
+`docs/HIGH_CONVICTION_FRAMEWORK.md` là bản tóm tắt; `SKILL.md` là runbook vận hành đầy đủ.
 
 ## High-Conviction Scanner
 
@@ -81,3 +89,6 @@ Nếu không có mã đạt chuẩn, output hợp lệ là **0 mã**.
 - “Tỷ trọng mã nào lớn nhất?” → dùng `weight_pct` snapshot mới nhất.
 - “Đã bán bao nhiêu FPT/PVB?” → ưu tiên `transactions_confirmed.csv`; chỉ dùng `transactions_inferred.csv` khi chưa có xác nhận trực tiếp.
 - “Có lệnh nào đang chờ?” → đọc `pending_orders.csv`; **không** biến lệnh PENDING thành holding.
+
+- “Quét thị trường/cổ phiếu hôm nay?” → đọc `skills/chungkhoan/SKILL.md`, sau đó chạy đúng EOD/intraday mode.
+- “Track record prediction?” → đọc `data/scanner/predictions.csv` và cập nhật các prediction đã đủ 7 phiên trước khi phát prediction mới.
