@@ -43,3 +43,11 @@ Các con số trong CSV/JSON phải trace được về một source_id ở file
 - PVB không còn xuất hiện; phù hợp với giao dịch bán đã được xác nhận ngày 08/10.
 - GVR không xuất hiện; prior LO 100 @33.80 không được coi là đã khớp.
 - Account identifier xuất hiện trên ảnh nhưng **không được lưu** vào dữ liệu repo.
+
+## user_message_2026-10-09_0920
+
+- Ngày theo ngữ cảnh: **2026-10-09**.
+- Giờ hội thoại: khoảng **09:20**.
+- Loại: xác nhận trực tiếp từ người dùng.
+- Người dùng xác nhận **PNJ SELL 50 cp @19.50 kVND/cp — FILLED**.
+- Sau giao dịch, PNJ còn **235 cp** theo trạng thái hiện biết.

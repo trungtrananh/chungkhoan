@@ -1,26 +1,37 @@
 {
   "as_of_date": "2026-10-09",
-  "as_of_time": "09:16",
-  "state_type": "latest_snapshot",
+  "as_of_time": "09:20",
+  "state_type": "latest_snapshot_plus_confirmed_events",
   "base_snapshot": {
     "date": "2026-10-09",
     "time": "09:16",
     "source_id": "user_screenshot_2026-10-09_0916"
   },
+  "confirmed_events_after_snapshot": [
+    {
+      "source_id": "user_message_2026-10-09_0920",
+      "ticker": "PNJ",
+      "action": "SELL",
+      "quantity": 50,
+      "execution_price_kvnd": 19.50,
+      "gross_value_vnd": 975000,
+      "status": "FILLED"
+    }
+  ],
   "current_known_holdings": [
     {"ticker":"FPT","quantity":152,"tradable_quantity":152},
     {"ticker":"FPT_WFT","quantity":25,"tradable_quantity":0},
     {"ticker":"HPG","quantity":130,"tradable_quantity":130},
     {"ticker":"MBB","quantity":230,"tradable_quantity":230},
     {"ticker":"PLX","quantity":100,"tradable_quantity":100},
-    {"ticker":"PNJ","quantity":285,"tradable_quantity":285}
+    {"ticker":"PNJ","quantity":235,"tradable_quantity":235}
   ],
   "closed_or_absent_positions": [
-    {"ticker":"PVB","quantity":0,"note":"Confirmed sold 100 @ 21.10 on 2026-10-08 and absent from this snapshot"},
-    {"ticker":"GVR","quantity":0,"note":"No position appears in this snapshot; prior LO 100 @ 33.80 is not treated as filled"}
+    {"ticker":"PVB","quantity":0,"note":"Confirmed sold 100 @ 21.10 on 2026-10-08"},
+    {"ticker":"GVR","quantity":0,"note":"No holding observed; prior LO was not evidenced as filled"}
   ],
   "pending_orders": [],
-  "summary": {
+  "summary_from_base_snapshot": {
     "total_cost_value_vnd": 41122907,
     "total_market_value_vnd": 26740450,
     "day_pnl_vnd": 245800,
@@ -29,8 +40,9 @@
     "portfolio_pnl_pct": -34.97
   },
   "notes": [
-    "This state is grounded directly in the 2026-10-09 09:16 screenshot.",
-    "No GVR holding is visible, so the prior pending order is considered not evidenced as filled.",
+    "PNJ holding reduced from 285 to 235 shares after confirmed sale of 50 shares at 19.50.",
+    "Base snapshot summary is stale after the PNJ sale; no full post-trade portfolio snapshot has been provided yet.",
+    "Gross PNJ sale value excludes fees and tax.",
     "No account identifier is stored."
   ]
 }

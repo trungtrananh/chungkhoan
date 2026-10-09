@@ -39,3 +39,10 @@
 2. Dùng `latest.json` để lấy đầy đủ giá/tỷ trọng/P&L snapshot 09/10 09:16.
 3. Không suy diễn GVR đã khớp nếu chưa có xác nhận hoặc snapshot có vị thế.
 4. Không lưu số tài khoản chứng khoán hiển thị trong ảnh.
+
+## Giao dịch xác nhận sau snapshot 09:16
+
+- **PNJ: SELL 50 cp @19.50 kVND/cp — FILLED**.
+- Giá trị khớp gộp: **975.000 VND**, chưa trừ phí/thuế.
+- PNJ hiện còn **235 cp** theo trạng thái hiện biết.
+- Các tỷ trọng/P&L trong bảng snapshot 09:16 chưa phản ánh giao dịch này.
