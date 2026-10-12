@@ -1,48 +1,72 @@
 {
-  "as_of_date": "2026-10-09",
-  "as_of_time": "09:20",
-  "state_type": "latest_snapshot_plus_confirmed_events",
+  "as_of_date": "2026-10-12",
+  "as_of_time": "10:00",
+  "state_type": "latest_snapshot",
   "base_snapshot": {
-    "date": "2026-10-09",
-    "time": "09:16",
-    "source_id": "user_screenshot_2026-10-09_0916"
+    "date": "2026-10-12",
+    "time": "10:00",
+    "source_id": "user_screenshot_2026-10-12_1000"
   },
-  "confirmed_events_after_snapshot": [
+  "confirmed_events_after_snapshot": [],
+  "current_known_holdings": [
     {
-      "source_id": "user_message_2026-10-09_0920",
+      "ticker": "FPT",
+      "quantity": 152,
+      "tradable_quantity": 152
+    },
+    {
+      "ticker": "FPT_WFT",
+      "quantity": 25,
+      "tradable_quantity": 0
+    },
+    {
+      "ticker": "HPG",
+      "quantity": 130,
+      "tradable_quantity": 130
+    },
+    {
+      "ticker": "MBB",
+      "quantity": 230,
+      "tradable_quantity": 230
+    },
+    {
+      "ticker": "PLX",
+      "quantity": 100,
+      "tradable_quantity": 100
+    },
+    {
       "ticker": "PNJ",
-      "action": "SELL",
-      "quantity": 50,
-      "execution_price_kvnd": 19.50,
-      "gross_value_vnd": 975000,
-      "status": "FILLED"
+      "quantity": 235,
+      "tradable_quantity": 235
     }
   ],
-  "current_known_holdings": [
-    {"ticker":"FPT","quantity":152,"tradable_quantity":152},
-    {"ticker":"FPT_WFT","quantity":25,"tradable_quantity":0},
-    {"ticker":"HPG","quantity":130,"tradable_quantity":130},
-    {"ticker":"MBB","quantity":230,"tradable_quantity":230},
-    {"ticker":"PLX","quantity":100,"tradable_quantity":100},
-    {"ticker":"PNJ","quantity":235,"tradable_quantity":235}
-  ],
   "closed_or_absent_positions": [
-    {"ticker":"PVB","quantity":0,"note":"Confirmed sold 100 @ 21.10 on 2026-10-08"},
-    {"ticker":"GVR","quantity":0,"note":"No holding observed; prior LO was not evidenced as filled"}
+    {
+      "ticker": "PVB",
+      "quantity": 0,
+      "note": "Confirmed sold 100 @ 21.10 on 2026-10-08"
+    },
+    {
+      "ticker": "GVR",
+      "quantity": 0,
+      "note": "No holding observed; prior LO was not evidenced as filled"
+    }
   ],
   "pending_orders": [],
   "summary_from_base_snapshot": {
-    "total_cost_value_vnd": 41122907,
-    "total_market_value_vnd": 26740450,
-    "day_pnl_vnd": 245800,
-    "day_pnl_pct": 0.93,
-    "portfolio_pnl_vnd": -14382457,
-    "portfolio_pnl_pct": -34.97
+    "total_cost_value_vnd": 38650544,
+    "total_market_value_vnd": 25487850,
+    "day_pnl_vnd": -72450,
+    "day_pnl_pct": -0.28,
+    "portfolio_pnl_vnd": -13162694,
+    "portfolio_pnl_pct": -34.06
   },
   "notes": [
-    "PNJ holding reduced from 285 to 235 shares after confirmed sale of 50 shares at 19.50.",
-    "Base snapshot summary is stale after the PNJ sale; no full post-trade portfolio snapshot has been provided yet.",
-    "Gross PNJ sale value excludes fees and tax.",
+    "Latest screenshot confirms PNJ 235 shares after the previously recorded sale of 50 shares; the sale is not duplicated.",
+    "Snapshot date is assigned from conversation context; screenshot itself only shows 10:00.",
+    "No post-snapshot confirmed transactions are known.",
+    "No active pending orders are confirmed; prior GVR order remains unresolved in pending_orders.csv. Absence from holdings does not prove cancellation.",
+    "Cash, margin balance, fees, tax and net sale proceeds are unknown.",
     "No account identifier is stored."
   ]
 }

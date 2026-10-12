@@ -51,3 +51,16 @@ Các con số trong CSV/JSON phải trace được về một source_id ở file
 - Loại: xác nhận trực tiếp từ người dùng.
 - Người dùng xác nhận **PNJ SELL 50 cp @19.50 kVND/cp — FILLED**.
 - Sau giao dịch, PNJ còn **235 cp** theo trạng thái hiện biết.
+
+## user_screenshot_2026-10-12_1000
+
+- Ngày gán theo ngữ cảnh hội thoại: **2026-10-12**, chưa xác nhận từ ảnh (ảnh không hiện ngày).
+- Giờ hiển thị: **10:00**; snapshot intraday, không phải EOD.
+- Loại: ảnh danh mục do người dùng gửi; không commit ảnh có số tài khoản.
+- Tổng vốn 38.650.544 VND; thị trường 25.487.850 VND.
+- P/L ngày -72.450 VND (-0,28%); danh mục -13.162.694 VND (-34,06%).
+- FPT 152; FPT_WFT 25 (khả dụng 0); HPG 130; MBB 230; PLX 100; PNJ 235.
+- PNJ giảm 50 cp so với snapshot 09/10 09:16, nhưng khớp giao dịch đã xác nhận lúc 09:20 cùng ngày. Không thêm giao dịch suy ra hoặc giao dịch xác nhận mới.
+- Không suy ra tiền mặt, margin, phí/thuế, giá khớp mới hoặc trạng thái lệnh GVR từ ảnh này.
+- Giá vốn từng dòng làm tròn; tổng vốn tính lại lệch 146 VND; giữ nguyên số tổng trên UI.
+- Account identifier không được lưu.

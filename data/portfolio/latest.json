@@ -1,36 +1,113 @@
 {
-  "snapshot_date": "2026-10-09",
-  "snapshot_time": "09:16",
-  "source_id": "user_screenshot_2026-10-09_0916",
+  "snapshot_date": "2026-10-12",
+  "snapshot_time": "10:00",
+  "snapshot_date_basis": "conversation_date_assumed; calendar date not visible in screenshot",
+  "source_id": "user_screenshot_2026-10-12_1000",
   "snapshot_type": "intraday",
   "currency": "VND",
   "price_unit": "kVND_per_share",
   "account_identifier_stored": false,
   "summary": {
-    "total_cost_value_vnd": 41122907,
-    "total_market_value_vnd": 26740450,
-    "day_pnl_vnd": 245800,
-    "day_pnl_pct": 0.93,
-    "portfolio_pnl_vnd": -14382457,
-    "portfolio_pnl_pct": -34.97
+    "total_cost_value_vnd": 38650544,
+    "total_market_value_vnd": 25487850,
+    "day_pnl_vnd": -72450,
+    "day_pnl_pct": -0.28,
+    "portfolio_pnl_vnd": -13162694,
+    "portfolio_pnl_pct": -34.06
   },
   "holdings": [
-    {"ticker":"FPT","quantity":152,"tradable_quantity":152,"market_price_kvnd":59.60,"cost_basis_kvnd":98.27,"weight_pct":33.90,"day_change_pct":-0.17,"total_pnl_pct":-39.35,"total_pnl_vnd":-5880000},
-    {"ticker":"FPT_WFT","quantity":25,"tradable_quantity":0,"market_price_kvnd":59.60,"cost_basis_kvnd":0.00,"weight_pct":5.58,"day_change_pct":-0.17,"total_pnl_pct":null,"total_pnl_vnd":1490000},
-    {"ticker":"HPG","quantity":130,"tradable_quantity":130,"market_price_kvnd":20.20,"cost_basis_kvnd":23.70,"weight_pct":9.82,"day_change_pct":0.25,"total_pnl_pct":-14.78,"total_pnl_vnd":-460000},
-    {"ticker":"MBB","quantity":230,"tradable_quantity":230,"market_price_kvnd":18.75,"cost_basis_kvnd":22.33,"weight_pct":16.13,"day_change_pct":-0.79,"total_pnl_pct":-16.04,"total_pnl_vnd":-820000},
-    {"ticker":"PLX","quantity":100,"tradable_quantity":100,"market_price_kvnd":37.95,"cost_basis_kvnd":38.76,"weight_pct":14.20,"day_change_pct":0.93,"total_pnl_pct":-2.09,"total_pnl_vnd":-80000},
-    {"ticker":"PNJ","quantity":285,"tradable_quantity":285,"market_price_kvnd":19.15,"cost_basis_kvnd":49.45,"weight_pct":20.36,"day_change_pct":4.93,"total_pnl_pct":-61.37,"total_pnl_vnd":-8650000}
+    {
+      "ticker": "FPT",
+      "quantity": 152,
+      "tradable_quantity": 152,
+      "market_price_kvnd": 58.3,
+      "cost_basis_kvnd": 98.27,
+      "weight_pct": 34.71,
+      "day_change_pct": 0.69,
+      "total_pnl_pct": -40.77,
+      "total_pnl_vnd": -6090000,
+      "day_pnl_vnd": 60000
+    },
+    {
+      "ticker": "FPT_WFT",
+      "quantity": 25,
+      "tradable_quantity": 0,
+      "market_price_kvnd": 58.3,
+      "cost_basis_kvnd": 0,
+      "weight_pct": 5.72,
+      "day_change_pct": 0.69,
+      "total_pnl_pct": null,
+      "total_pnl_vnd": 1460000,
+      "day_pnl_vnd": 10000
+    },
+    {
+      "ticker": "HPG",
+      "quantity": 130,
+      "tradable_quantity": 130,
+      "market_price_kvnd": 20.2,
+      "cost_basis_kvnd": 23.7,
+      "weight_pct": 10.3,
+      "day_change_pct": 0.5,
+      "total_pnl_pct": -14.78,
+      "total_pnl_vnd": -460000,
+      "day_pnl_vnd": 10000
+    },
+    {
+      "ticker": "MBB",
+      "quantity": 230,
+      "tradable_quantity": 230,
+      "market_price_kvnd": 19.15,
+      "cost_basis_kvnd": 22.33,
+      "weight_pct": 17.28,
+      "day_change_pct": 0.52,
+      "total_pnl_pct": -14.25,
+      "total_pnl_vnd": -730000,
+      "day_pnl_vnd": 20000
+    },
+    {
+      "ticker": "PLX",
+      "quantity": 100,
+      "tradable_quantity": 100,
+      "market_price_kvnd": 36.85,
+      "cost_basis_kvnd": 38.76,
+      "weight_pct": 14.47,
+      "day_change_pct": -1.34,
+      "total_pnl_pct": -4.93,
+      "total_pnl_vnd": -190000,
+      "day_pnl_vnd": -50000
+    },
+    {
+      "ticker": "PNJ",
+      "quantity": 235,
+      "tradable_quantity": 235,
+      "market_price_kvnd": 18.95,
+      "cost_basis_kvnd": 49.45,
+      "weight_pct": 17.47,
+      "day_change_pct": -2.82,
+      "total_pnl_pct": -61.68,
+      "total_pnl_vnd": -7170000,
+      "day_pnl_vnd": -130000
+    }
   ],
   "observed_changes_vs_previous_snapshot": [
-    {"ticker":"PVB","quantity_before":100,"quantity_after":0,"action":"SELL","quantity_change":-100,"execution_price_kvnd":21.10,"evidence":"Confirmed by user on 2026-10-08 14:06 and reflected by absence in current snapshot"},
-    {"ticker":"GVR","quantity_before":0,"quantity_after":0,"action":"NO_POSITION_OBSERVED","quantity_change":0,"execution_price_kvnd":null,"evidence":"No GVR position appears in the 2026-10-09 09:16 portfolio snapshot"}
+    {
+      "ticker": "PNJ",
+      "quantity_before": 285,
+      "quantity_after": 235,
+      "quantity_change": -50,
+      "action": "SELL",
+      "execution_price_kvnd": 19.5,
+      "evidence": "Previously confirmed event user_message_2026-10-09_0920; new screenshot corroborates quantity. Not a new trade."
+    }
   ],
   "notes": [
-    "Snapshot is intraday, not end-of-day.",
-    "PVB is no longer present, consistent with confirmed sale of 100 shares at 21.10 on 2026-10-08.",
-    "GVR is not present in holdings; prior 100-share LO at 33.80 is therefore not treated as filled.",
-    "FPT_WFT has tradable_quantity=0 in the screenshot.",
-    "Account identifier visible in the screenshot is intentionally not stored."
+    "Date attributed from conversation context, not visible in screenshot; time 10:00 is observed.",
+    "Market prices and UI P/L preserved from screenshot; not replaced with afternoon market quotes.",
+    "Quantity matches prior current_state.json for all six holdings.",
+    "FPT_WFT tradable_quantity=0; economic cost and availability date are unconfirmed.",
+    "Sum of quantity x displayed price matches market value exactly. Rounded per-row costs imply 38,650,690 VND versus UI total 38,650,544 VND; retain UI total.",
+    "Rounded weights sum to 99.95%; rounded row P/L and day P/L need not sum to UI totals.",
+    "Cash, margin, and pending order status are not displayed.",
+    "Account identifier omitted."
   ]
 }
