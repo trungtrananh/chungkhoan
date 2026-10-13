@@ -1,0 +1,64 @@
+{
+  "valuation_date": "2026-10-12",
+  "type": "analysis_market_based_eod_estimate_not_broker_snapshot",
+  "currency": "VND",
+  "price_unit": "kVND_per_share",
+  "quantity_source": "latest_snapshot_plus_user_no_trade_confirmation",
+  "total_estimated_market_value_vnd": 25087450,
+  "holdings": [
+    {
+      "ticker": "FPT",
+      "quantity": 152,
+      "close_price_kvnd": 57.1,
+      "value_vnd": 8679200,
+      "price_source_url": "https://nmquan.vn/data/ma/FPT/gia",
+      "valuation_assumption": null
+    },
+    {
+      "ticker": "FPT_WFT",
+      "quantity": 25,
+      "close_price_kvnd": 57.1,
+      "value_vnd": 1427500,
+      "price_source_url": "https://nmquan.vn/data/ma/FPT/gia",
+      "valuation_assumption": "Marked at FPT close as screenshot does; not a tradable quote or confirmation of availability."
+    },
+    {
+      "ticker": "HPG",
+      "quantity": 130,
+      "close_price_kvnd": 20.7,
+      "value_vnd": 2691000,
+      "price_source_url": "https://nmquan.vn/data/ma/HPG/gia",
+      "valuation_assumption": null
+    },
+    {
+      "ticker": "MBB",
+      "quantity": 230,
+      "close_price_kvnd": 19.15,
+      "value_vnd": 4404500,
+      "price_source_url": "https://nmquan.vn/data/ma/MBB/gia",
+      "valuation_assumption": null
+    },
+    {
+      "ticker": "PLX",
+      "quantity": 100,
+      "close_price_kvnd": 36.2,
+      "value_vnd": 3620000.0000000005,
+      "price_source_url": "https://nmquan.vn/data/ma/PLX/gia",
+      "valuation_assumption": null
+    },
+    {
+      "ticker": "PNJ",
+      "quantity": 235,
+      "close_price_kvnd": 18.15,
+      "value_vnd": 4265250,
+      "price_source_url": "https://nmquan.vn/data/ma/PNJ/gia",
+      "valuation_assumption": null
+    }
+  ],
+  "notes": [
+    "Last known quantities; no trades on 2026-10-12 confirmed by user on 2026-10-13.",
+    "FPT_WFT valued at FPT close; not independently tradable.",
+    "Cash, margin and broker-account P/L are unknown.",
+    "Do not replace latest.json or append screenshot history using this estimate."
+  ]
+}

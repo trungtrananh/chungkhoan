@@ -27,3 +27,7 @@ FPT + FPT_WFT chiếm **40,43% giá trị cổ phiếu**, không phải tỷ tr�
 ## Cách đọc
 
 Dùng current_state.json cho số lượng hiện biết; latest.json cho giá/P&L gốc 10:00. Báo cáo thị trường buổi chiều ở data/scanner/runs/2026-10-12.md là Analysis, không sửa ảnh nguồn và không tạo giao dịch.
+
+## Xác nhận ngày 13/10/2026 và định giá EOD
+
+Người dùng xác nhận **không có giao dịch mới ngày 12/10**. Số lượng giữ nguyên. Theo giá đóng cửa thị trường 12/10 và giả định WFT theo giá FPT, giá trị cổ phiếu **ước tính 25.087.450 VND**, tỷ trọng FPT-family **40,29%**. Đây là Analysis, không phải snapshot/P&L từ công ty chứng khoán. Giá và P/L trong bảng trên vẫn thuộc ảnh 10:00. Xem data/portfolio/valuations/2026-10-12.json và data/scanner/runs/2026-10-12-eod-plan-2026-10-13.md.

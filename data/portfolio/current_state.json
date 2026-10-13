@@ -1,7 +1,7 @@
 {
   "as_of_date": "2026-10-12",
   "as_of_time": "10:00",
-  "state_type": "latest_snapshot",
+  "state_type": "latest_snapshot_plus_user_confirmation",
   "base_snapshot": {
     "date": "2026-10-12",
     "time": "10:00",
@@ -67,6 +67,17 @@
     "No post-snapshot confirmed transactions are known.",
     "No active pending orders are confirmed; prior GVR order remains unresolved in pending_orders.csv. Absence from holdings does not prove cancellation.",
     "Cash, margin balance, fees, tax and net sale proceeds are unknown.",
-    "No account identifier is stored."
+    "No account identifier is stored.",
+    "User confirmed on 2026-10-13 that no additional trades were made on 2026-10-12; quantities remain unchanged. This is not a new screenshot or a confirmation of orders, cash, margin or FPT_WFT availability.",
+    "Summary remains from the 10:00 screenshot; EOD market-based valuation is stored separately under valuations/2026-10-12.json."
+  ],
+  "last_positions_confirmed_through_date": "2026-10-12",
+  "no_trade_confirmations": [
+    {
+      "source_id": "user_message_2026-10-13_no_trades_2026-10-12",
+      "received_date": "2026-10-13",
+      "covered_date": "2026-10-12",
+      "statement": "User confirms no additional transactions on 2026-10-12."
+    }
   ]
 }

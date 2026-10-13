@@ -64,3 +64,10 @@ Các con số trong CSV/JSON phải trace được về một source_id ở file
 - Không suy ra tiền mặt, margin, phí/thuế, giá khớp mới hoặc trạng thái lệnh GVR từ ảnh này.
 - Giá vốn từng dòng làm tròn; tổng vốn tính lại lệch 146 VND; giữ nguyên số tổng trên UI.
 - Account identifier không được lưu.
+
+## user_message_2026-10-13_no_trades_2026-10-12
+
+- Người dùng xác nhận ngày 13/10/2026: ngày 12/10 không thực hiện thêm giao dịch nào.
+- Giữ nguyên số lượng đã biết; không thêm giao dịch xác nhận/suy ra hoặc snapshot ảnh mới.
+- Không xác nhận tiền mặt, margin, trạng thái lệnh hoặc availability của WFT.
+- Ước tính giá trị EOD từ thị trường được lưu riêng ở valuations/2026-10-12.json, không thay latest.json.
