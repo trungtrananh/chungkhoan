@@ -1,18 +1,43 @@
 {
-  "as_of_date": "2026-10-12",
-  "as_of_time": "10:00",
-  "state_type": "latest_snapshot_plus_user_confirmation",
+  "as_of_date": "2026-10-13",
+  "as_of_time": null,
+  "state_type": "latest_snapshot_plus_confirmed_events",
   "base_snapshot": {
     "date": "2026-10-12",
     "time": "10:00",
     "source_id": "user_screenshot_2026-10-12_1000"
   },
-  "confirmed_events_after_snapshot": [],
+  "confirmed_events_after_snapshot": [
+    {
+      "source_id": "user_message_2026-10-13_filled_pnj100_fpt50",
+      "trade_date": "2026-10-13",
+      "trade_date_basis": "conversation context",
+      "reported_time": null,
+      "ticker": "PNJ",
+      "action": "SELL",
+      "quantity": 100,
+      "execution_price_kvnd": 18.7,
+      "gross_value_vnd": 1870000,
+      "status": "FILLED"
+    },
+    {
+      "source_id": "user_message_2026-10-13_filled_pnj100_fpt50",
+      "trade_date": "2026-10-13",
+      "trade_date_basis": "conversation context",
+      "reported_time": null,
+      "ticker": "FPT",
+      "action": "SELL",
+      "quantity": 50,
+      "execution_price_kvnd": 57.1,
+      "gross_value_vnd": 2855000,
+      "status": "FILLED"
+    }
+  ],
   "current_known_holdings": [
     {
       "ticker": "FPT",
-      "quantity": 152,
-      "tradable_quantity": 152
+      "quantity": 102,
+      "tradable_quantity": 102
     },
     {
       "ticker": "FPT_WFT",
@@ -36,8 +61,8 @@
     },
     {
       "ticker": "PNJ",
-      "quantity": 235,
-      "tradable_quantity": 235
+      "quantity": 135,
+      "tradable_quantity": 135
     }
   ],
   "closed_or_absent_positions": [
@@ -62,16 +87,18 @@
     "portfolio_pnl_pct": -34.06
   },
   "notes": [
-    "Latest screenshot confirms PNJ 235 shares after the previously recorded sale of 50 shares; the sale is not duplicated.",
     "Snapshot date is assigned from conversation context; screenshot itself only shows 10:00.",
-    "No post-snapshot confirmed transactions are known.",
     "No active pending orders are confirmed; prior GVR order remains unresolved in pending_orders.csv. Absence from holdings does not prove cancellation.",
     "Cash, margin balance, fees, tax and net sale proceeds are unknown.",
     "No account identifier is stored.",
     "User confirmed on 2026-10-13 that no additional trades were made on 2026-10-12; quantities remain unchanged. This is not a new screenshot or a confirmation of orders, cash, margin or FPT_WFT availability.",
-    "Summary remains from the 10:00 screenshot; EOD market-based valuation is stored separately under valuations/2026-10-12.json."
+    "Summary remains from the 10:00 screenshot; EOD market-based valuation is stored separately under valuations/2026-10-12.json.",
+    "On 2026-10-13 user confirmed PNJ SELL 100 @18.70 and FPT SELL 50 @57.10 FILLED. Exact execution/reporting times are not supplied.",
+    "Current known holdings: PNJ 135 and FPT 102 shares. Other quantities and last known availability are unchanged.",
+    "Combined gross sale proceeds are 4,725,000 VND, before fees and tax. Net cash and available buying power are not confirmed.",
+    "Base snapshot summary and 2026-10-12 EOD valuation predate these sales; do not interpret them as current portfolio value or P/L."
   ],
-  "last_positions_confirmed_through_date": "2026-10-12",
+  "last_positions_confirmed_through_date": "2026-10-13",
   "no_trade_confirmations": [
     {
       "source_id": "user_message_2026-10-13_no_trades_2026-10-12",

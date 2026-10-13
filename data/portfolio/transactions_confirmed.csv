@@ -1,3 +1,5 @@
 trade_date,reported_time,source_id,ticker,action,quantity,execution_price_kvnd,gross_value_vnd,status,evidence_note
 2026-10-08,14:06,user_message_2026-10-08_1406,PVB,SELL,100,21.10,2110000,FILLED,"User explicitly confirmed the sale filled at 21.1; fees/tax not included in gross value"
 2026-10-09,09:20,user_message_2026-10-09_0920,PNJ,SELL,50,19.50,975000,FILLED,"User explicitly confirmed sale of 50 PNJ shares at 19.5; fees/tax not included in gross value"
+2026-10-13,,user_message_2026-10-13_filled_pnj100_fpt50,PNJ,SELL,100,18.70,1870000,FILLED,"User explicitly confirmed filled sale; date from conversation context; exact time unknown; gross excludes fees and tax"
+2026-10-13,,user_message_2026-10-13_filled_pnj100_fpt50,FPT,SELL,50,57.10,2855000,FILLED,"User explicitly confirmed filled sale; date from conversation context; exact time unknown; gross excludes fees and tax"

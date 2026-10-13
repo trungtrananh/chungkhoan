@@ -1,4 +1,26 @@
-# Danh mục hiện tại — snapshot 12/10/2026 10:00
+# Danh mục hiện biết — sau hai giao dịch xác nhận 13/10/2026
+
+Nguồn: `user_message_2026-10-13_filled_pnj100_fpt50`. Ngày theo ngữ cảnh hội thoại; giờ khớp chưa được cung cấp. Trạng thái hiện biết là ảnh 12/10 cộng giao dịch đã xác nhận sau ảnh.
+
+| Mã | Số lượng hiện biết | Khả dụng hiện biết |
+|---|---:|---:|
+| FPT | 102 | 102 |
+| FPT_WFT | 25 | 0 |
+| HPG | 130 | 130 |
+| MBB | 230 | 230 |
+| PLX | 100 | 100 |
+| PNJ | 135 | 135 |
+
+- PNJ: bán100 @18,70, giá trị gộp1.870.000 VND, 235→135 cp.
+- FPT: bán50 @57,10, giá trị gộp2.855.000 VND, 152→102 cp.
+- Tổng giá trị bán **4.725.000 VND**, chưa trừ phí/thuế. Không xác nhận tiền khả dụng, sức mua, dư nợ margin hoặc lệnh mới.
+- FPT_WFT25 vẫn có khả dụng0 theo ảnh gần nhất, chưa có xác nhận thay đổi.
+- Chưa có snapshot danh mục sau bán nên không cập nhật P/L, giá vốn còn lại hoặc tỷ trọng bằng suy đoán. Các số ở phần lịch sử dưới đây đều trước hai giao dịch.
+- Source of truth: data/portfolio/current_state.json; giao dịch: transactions_confirmed.csv.
+
+---
+
+## Danh mục hiện tại — snapshot 12/10/2026 10:00
 
 Ngày gán theo ngữ cảnh hội thoại; ảnh không hiện ngày. Giờ 10:00 trực tiếp từ ảnh. Snapshot intraday, không phải EOD. Nguồn: `user_screenshot_2026-10-12_1000`.
 

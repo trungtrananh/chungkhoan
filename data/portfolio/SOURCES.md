@@ -71,3 +71,12 @@ Các con số trong CSV/JSON phải trace được về một source_id ở file
 - Giữ nguyên số lượng đã biết; không thêm giao dịch xác nhận/suy ra hoặc snapshot ảnh mới.
 - Không xác nhận tiền mặt, margin, trạng thái lệnh hoặc availability của WFT.
 - Ước tính giá trị EOD từ thị trường được lưu riêng ở valuations/2026-10-12.json, không thay latest.json.
+
+## user_message_2026-10-13_filled_pnj100_fpt50
+
+- Ngày giao dịch theo ngữ cảnh: **13/10/2026**; người dùng không cung cấp giờ khớp.
+- Loại: xác nhận trực tiếp từ người dùng, không phải ảnh mới.
+- **PNJ SELL 100 cp @18,70 kVND/cp — FILLED**; giá trị gộp **1.870.000 VND**; còn **135 cp**.
+- **FPT SELL 50 cp @57,10 kVND/cp — FILLED**; giá trị gộp **2.855.000 VND**; còn **102 cp**.
+- Tổng giá trị bán **4.725.000 VND**, chưa phí/thuế; không suy ra tiền mặt khả dụng hoặc sức mua.
+- Không thêm snapshot ảnh hoặc giao dịch suy ra từ xác nhận này; giữ ảnh/historical valuation gốc.
